@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.TrainiaTeam.Trainia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/trainia_logo_hand1"
+        android:label="Trainia"
+        android:logo="@mipmap/trainia_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".Sign_In" />
+        <!-- <activity android:name=".ViewUsersActivity" /> -->
+        <activity android:name=".Sign_up" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Wourkouts" />
+        <activity android:name=".Push_up" />
+        <activity android:name=".Sign_up_2" />
+        <activity android:name=".Progress_Push_Up" />
+        <activity android:name=".Progress_Squat" />
+        <activity android:name=".Pull_up" />
+        <activity android:name=".LevelActivty" />
+        <activity android:name=".Sit_up" />
+        <activity android:name=".Squat" />
+        <activity android:name=".BarCharGraphActivity" />
+        <!-- <activity android:name=".Test"/> -->
+        <activity android:name=".Progress_Pull_Up" />
+
+        <Fragment
+            android:name=".FacebookFragment"
+            android:label="@string/title_activity_facebook_fragment"></Fragment>
+
+        <activity android:name=".Progress_Sit_up"></activity>
+
+        <activity
+            android:name=".GmailLogin"
+            android:label="@string/title_activity_gmail_login" >
+        </activity>
+
+    </application>
+
+</manifest>

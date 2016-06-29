@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context=".LevelActivty" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_dialog_info"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hint"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"
+            android:textSize="17sp"
+            android:textColor="#cfd0cb"/>
+        </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="each level requires has a mandatory set of reps that you should be able to do before selecting that certain Level\nPS:it's right next to the level name"
+        android:textColor="#cfd0cb"
+        />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView48"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go hard or go home"
+        android:textColor="#cfd0cb"
+        android:layout_marginTop="30dp"
+        android:gravity="center|center_vertical|center_horizontal|bottom"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

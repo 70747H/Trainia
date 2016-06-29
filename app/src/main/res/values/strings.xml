@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Trainia</string>
+    <string name="app_id">1099823506740490</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="err_name">Human name please</string>
+    <string name="err_email">Email address please</string>
+    <string name="err_ip">IP address please</string>
+    <string name="err_tel">Telephone Number please</string>
+    <string name="err_zipcode">Number only</string>
+    <string name="err_year">Year must be between 1900 and this year</string>
+    <string name="err_height">Human height should be between 0 to 2.72 meters</string>
+    <string name="err_age">sorry, you should be 16 or older</string>
+    <string name="err_pass">must have one lower,upper,sepcial char and one digit and 8</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="goals_names">
+        <item>Gain Weight</item>
+        <item>Get Fit</item>
+        <item>Lose Weight</item>
+    </string-array>
+
+    <string-array name="activity_level">
+        <item>Gain Weight</item>
+        <item>Get Fit</item>
+        <item>Lose Weight</item>
+    </string-array>
+    <string name="title_activity_facebook_fragment">FacebookFragment</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_gmail_login">GmailLogin</string>
+</resources>

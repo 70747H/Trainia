@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1008915555434",
+    "project_id": "trainia-1355"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008915555434:android:8c2cb5c2424c76f0",
+        "android_client_info": {
+          "package_name": "com.example.TrainiaTeam.Trainia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008915555434-hq5ods1v1cafkob3gaaqh316kf34dps4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.TrainiaTeam.Trainia",
+            "certificate_hash": "70C252CCFD7FF487C6B0EB329ACEF17E53703AFD"
+          }
+        },
+        {
+          "client_id": "1008915555434-ra71e3q2fv4tbqb326ki1tjvh1m3aqmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ6HdGYRpDEa_UEz_u9loANo-yJCfGIck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
