@@ -85,6 +85,7 @@ public class Progress_Push_Up extends AppCompatActivity implements SensorEventLi
         tvTxtToGo = (TextView) findViewById(R.id.txt_togo);
 
         manager = new SessionManager();
+        iWorkoutId = Integer.valueOf(manager.getPreferences(Progress_Push_Up.this, "selectedWorkoutId"));
         iLevelId = Integer.valueOf(manager.getPreferences(Progress_Push_Up.this, "pushupSelectedLevelId"));
 
         mSensorManager   = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -271,7 +272,7 @@ public class Progress_Push_Up extends AppCompatActivity implements SensorEventLi
 
     }
     private void getSets(){
-        SimpleSQLiteOpenHelper helper = new DatabaseHelper(this.getApplicationContext());
+        SimpleSQLiteOpenHelper helper = new DatabaseHelper(Progress_Push_Up.this);
         SetsDAO setsDAO = new SetsDAOImpl(helper);
         setsList = setsDAO.getSetsList(setsDAO.WORKOUTS_ID.eq(iWorkoutId).and(setsDAO.LEVEL_ID.eq(iLevelId)));
         sets= (Sets) setsList.get(0);
@@ -319,7 +320,6 @@ public class Progress_Push_Up extends AppCompatActivity implements SensorEventLi
         SimpleSQLiteOpenHelper helper = new DatabaseHelper(this.getApplicationContext());
         ProgressdetailsDAO progressdetailsDAO = new ProgressdetailsDAOImpl(helper);
         dDailyDate = new java.sql.Date(Calendar.getInstance().getTime().getTime());
-        iWorkoutId = Integer.valueOf(manager.getPreferences(Progress_Push_Up.this,"selectedWorkoutId"));
         iScore = Integer.valueOf(sSetsSum);
         iSetsid = sets.getId();
         iCalorie = calculateButrntCAlories();
